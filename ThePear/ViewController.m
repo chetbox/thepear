@@ -9,9 +9,10 @@
 #import "ViewController.h"
 #import "MenuCollectionViewCell.h"
 #import "QuoteMachineViewController.h"
+#import "LeavingCardViewController.h"
 
 // INCREMENT HERE WHEN ADDING A PAGE
-#define NUMBER_OF_PAGES 1
+#define NUMBER_OF_PAGES 2
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -44,7 +45,18 @@
     MenuCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier
                                                                            forIndexPath:indexPath];
     
-    cell.label.text = [NSString stringWithFormat:@"Page %li", indexPath.item + 1];
+    switch (indexPath.item) {
+            // ADD A CASE FOR YOUR VC HERE
+        case 0: {
+            cell.label.text = [NSString stringWithFormat:@"Quote Machine"];
+            break;
+        }
+        case 1: {
+            cell.label.text = [NSString stringWithFormat:@"Sorry you're leaving"];
+            break;
+        }
+    }
+    
     return cell;
 }
 
@@ -58,6 +70,11 @@
         case 0: {
             QuoteMachineViewController *newVc = [[NSBundle mainBundle] loadNibNamed:@"QuoteMachineViewController" owner:self options:nil][0];
             [self.navigationController pushViewController:newVc animated:YES];
+            break;
+        }
+        case 1: {
+            LeavingCardViewController *cardController = [[LeavingCardViewController alloc] init];
+            [self.navigationController pushViewController: cardController animated: YES];
             break;
         }
             

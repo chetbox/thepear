@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
+		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
+		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
+		09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
 		E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A081C03EA710058BAD6 /* AppDelegate.m */; };
 		E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A0B1C03EA710058BAD6 /* ViewController.m */; };
@@ -19,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09DCAD661C14DEA800051079 /* LeavingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingCardViewController.h; path = LeavingCard/LeavingCardViewController.h; sourceTree = "<group>"; };
+		09DCAD671C14DEA800051079 /* LeavingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingCardViewController.m; path = LeavingCard/LeavingCardViewController.m; sourceTree = "<group>"; };
+		09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingCardViewController.xib; path = LeavingCard/LeavingCardViewController.xib; sourceTree = "<group>"; };
+		09DCAD6E1C14E26800051079 /* LeavingMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingMessageTableViewCell.h; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.h"; sourceTree = "<group>"; };
+		09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingMessageTableViewCell.m; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.m"; sourceTree = "<group>"; };
+		09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingMessageTableViewCell.xib; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.xib"; sourceTree = "<group>"; };
 		E2C65A011C03EA710058BAD6 /* ThePear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C65A051C03EA710058BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2C65A071C03EA710058BAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +57,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09DCAD651C14DE4900051079 /* Sorry you're leaving */ = {
+			isa = PBXGroup;
+			children = (
+				09DCAD6D1C14E22300051079 /* Table View Cell */,
+				09DCAD661C14DEA800051079 /* LeavingCardViewController.h */,
+				09DCAD671C14DEA800051079 /* LeavingCardViewController.m */,
+				09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */,
+			);
+			name = "Sorry you're leaving";
+			sourceTree = "<group>";
+		};
+		09DCAD6D1C14E22300051079 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09DCAD6E1C14E26800051079 /* LeavingMessageTableViewCell.h */,
+				09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */,
+				09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
 		E2C659F81C03EA710058BAD6 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +97,7 @@
 		E2C65A031C03EA710058BAD6 /* ThePear */ = {
 			isa = PBXGroup;
 			children = (
+				09DCAD651C14DE4900051079 /* Sorry you're leaving */,
 				E2C65A1E1C03F2F80058BAD6 /* QuoteMachine */,
 				E2C65A071C03EA710058BAD6 /* AppDelegate.h */,
 				E2C65A081C03EA710058BAD6 /* AppDelegate.m */,
@@ -157,6 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
+				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,
@@ -175,7 +209,9 @@
 				E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */,
 				E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */,
 				E2C65A061C03EA710058BAD6 /* main.m in Sources */,
+				09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */,
 				E2C65A1D1C03EFC70058BAD6 /* MenuCollectionViewCell.m in Sources */,
+				09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +360,7 @@
 				E2C65A1A1C03EA710058BAD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
