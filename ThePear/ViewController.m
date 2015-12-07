@@ -10,9 +10,10 @@
 #import "MenuCollectionViewCell.h"
 #import "QuoteMachineViewController.h"
 #import "LeavingCardViewController.h"
+#import "EmojiFacesViewController.h"
 
 // INCREMENT HERE WHEN ADDING A PAGE
-#define NUMBER_OF_PAGES 2
+#define NUMBER_OF_PAGES 3
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -55,6 +56,10 @@
             cell.label.text = [NSString stringWithFormat:@"Sorry you're leaving"];
             break;
         }
+        case 2: {
+            cell.label.text = [NSString stringWithFormat:@"Emoji faces"];
+            break;
+        }
     }
     
     return cell;
@@ -75,6 +80,11 @@
         case 1: {
             LeavingCardViewController *cardController = [[LeavingCardViewController alloc] init];
             [self.navigationController pushViewController: cardController animated: YES];
+            break;
+        }
+        case 2: {
+            EmojiFacesViewController *efVc = [[UIStoryboard storyboardWithName:@"EmojiFaces" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+            [self.navigationController pushViewController:efVc animated:YES];
             break;
         }
             

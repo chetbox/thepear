@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D7DC6E1C16171400B83161 /* EmojiFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D7DC6C1C16171400B83161 /* EmojiFacesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		06D7DC731C1632FA00B83161 /* EmojiFaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC721C1632FA00B83161 /* EmojiFaces.storyboard */; settings = {ASSET_TAGS = (); }; };
+		06D7DC761C1636B100B83161 /* testemoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC741C1636B100B83161 /* testemoji@2x.png */; settings = {ASSET_TAGS = (); }; };
+		06D7DC771C1636B100B83161 /* testemoji2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC751C1636B100B83161 /* testemoji2@2x.png */; settings = {ASSET_TAGS = (); }; };
 		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
 		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D7DC6B1C16171400B83161 /* EmojiFacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiFacesViewController.h; sourceTree = "<group>"; };
+		06D7DC6C1C16171400B83161 /* EmojiFacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiFacesViewController.m; sourceTree = "<group>"; };
+		06D7DC721C1632FA00B83161 /* EmojiFaces.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmojiFaces.storyboard; sourceTree = "<group>"; };
+		06D7DC741C1636B100B83161 /* testemoji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testemoji@2x.png"; sourceTree = "<group>"; };
+		06D7DC751C1636B100B83161 /* testemoji2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testemoji2@2x.png"; sourceTree = "<group>"; };
 		09DCAD661C14DEA800051079 /* LeavingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingCardViewController.h; path = LeavingCard/LeavingCardViewController.h; sourceTree = "<group>"; };
 		09DCAD671C14DEA800051079 /* LeavingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingCardViewController.m; path = LeavingCard/LeavingCardViewController.m; sourceTree = "<group>"; };
 		09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingCardViewController.xib; path = LeavingCard/LeavingCardViewController.xib; sourceTree = "<group>"; };
@@ -57,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06D7DC671C16163500B83161 /* Emoji Face */ = {
+			isa = PBXGroup;
+			children = (
+				06D7DC741C1636B100B83161 /* testemoji@2x.png */,
+				06D7DC751C1636B100B83161 /* testemoji2@2x.png */,
+				06D7DC6B1C16171400B83161 /* EmojiFacesViewController.h */,
+				06D7DC6C1C16171400B83161 /* EmojiFacesViewController.m */,
+				06D7DC721C1632FA00B83161 /* EmojiFaces.storyboard */,
+			);
+			name = "Emoji Face";
+			sourceTree = "<group>";
+		};
 		09DCAD651C14DE4900051079 /* Sorry you're leaving */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,7 @@
 		E2C65A031C03EA710058BAD6 /* ThePear */ = {
 			isa = PBXGroup;
 			children = (
+				06D7DC671C16163500B83161 /* Emoji Face */,
 				09DCAD651C14DE4900051079 /* Sorry you're leaving */,
 				E2C65A1E1C03F2F80058BAD6 /* QuoteMachine */,
 				E2C65A071C03EA710058BAD6 /* AppDelegate.h */,
@@ -190,11 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
+				06D7DC761C1636B100B83161 /* testemoji@2x.png in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
+				06D7DC731C1632FA00B83161 /* EmojiFaces.storyboard in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,
 				E2C65A0F1C03EA710058BAD6 /* Main.storyboard in Resources */,
+				06D7DC771C1636B100B83161 /* testemoji2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +234,7 @@
 				E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */,
 				E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */,
 				E2C65A061C03EA710058BAD6 /* main.m in Sources */,
+				06D7DC6E1C16171400B83161 /* EmojiFacesViewController.m in Sources */,
 				09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */,
 				E2C65A1D1C03EFC70058BAD6 /* MenuCollectionViewCell.m in Sources */,
 				09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */,
@@ -324,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
