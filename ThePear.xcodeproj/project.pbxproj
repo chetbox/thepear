@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */ = {isa = PBXBuildFile; fileRef = 094DD2D41C162EFF0014CF70 /* Marcin.png */; };
 		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
 		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094DD2D41C162EFF0014CF70 /* Marcin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Marcin.png; path = LeavingCard/Messages/Marcin.png; sourceTree = "<group>"; };
 		09DCAD661C14DEA800051079 /* LeavingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingCardViewController.h; path = LeavingCard/LeavingCardViewController.h; sourceTree = "<group>"; };
 		09DCAD671C14DEA800051079 /* LeavingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingCardViewController.m; path = LeavingCard/LeavingCardViewController.m; sourceTree = "<group>"; };
 		09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingCardViewController.xib; path = LeavingCard/LeavingCardViewController.xib; sourceTree = "<group>"; };
@@ -57,9 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094DD2D31C162EE20014CF70 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				094DD2D41C162EFF0014CF70 /* Marcin.png */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
 		09DCAD651C14DE4900051079 /* Sorry you're leaving */ = {
 			isa = PBXGroup;
 			children = (
+				094DD2D31C162EE20014CF70 /* Messages */,
 				09DCAD6D1C14E22300051079 /* Table View Cell */,
 				09DCAD661C14DEA800051079 /* LeavingCardViewController.h */,
 				09DCAD671C14DEA800051079 /* LeavingCardViewController.m */,
@@ -191,6 +202,7 @@
 			files = (
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
+				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,

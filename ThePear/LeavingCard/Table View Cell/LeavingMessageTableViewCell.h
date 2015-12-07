@@ -10,6 +10,9 @@
 
 @interface LeavingMessageTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *messageImageView;
+
+
 + (NSString*) identifier;
 
 @end
