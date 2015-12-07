@@ -9,9 +9,10 @@
 #import "LeavingCardViewController.h"
 #import "LeavingMessageTableViewCell.h"
 
-@interface LeavingCardViewController()<UITableViewDataSource>
+@interface LeavingCardViewController()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *messageImages;
 
 @end
 
@@ -20,7 +21,7 @@
 - (instancetype) init {
     self = [super initWithNibName: @"LeavingCardViewController" bundle: [NSBundle mainBundle]];
     if (self) {
-        
+        _messageImages = @[@"Marcin"];
     }
     return self;
 }
@@ -38,13 +39,20 @@
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [self.messageImages count];
 }
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LeavingMessageTableViewCell *cell = (LeavingMessageTableViewCell*)[tableView dequeueReusableCellWithIdentifier: [LeavingMessageTableViewCell identifier]];
+    cell.messageImageView.image = [UIImage imageNamed: self.messageImages[indexPath.row]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIImage *image = [UIImage imageNamed: self.messageImages[indexPath.row]];
+    return [image size].height/[UIScreen mainScreen].nativeScale;
+}
 
 @end

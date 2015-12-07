@@ -8,6 +8,7 @@
 
 #import "LeavingMessageTableViewCell.h"
 
+
 @implementation LeavingMessageTableViewCell
 
 + (NSString*) identifier {

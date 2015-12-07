@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeavingCardViewController">
             <connections>
+                <outlet property="tableView" destination="YHD-b1-VLM" id="rJm-nh-kGN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="HYG-4R-D6b"/>
             </connections>
         </placeholder>
@@ -15,15 +16,27 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YHD-b1-VLM">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YHD-b1-VLM">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.67595344199999996" green="1" blue="0.76482213850000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jOV-P3-4qg"/>
+                        <outlet property="delegate" destination="-1" id="rFb-cG-pBG"/>
+                    </connections>
                 </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="719" y="564"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YHD-b1-VLM" secondAttribute="trailing" id="4af-Li-0lp"/>
+                <constraint firstItem="YHD-b1-VLM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9WJ-eg-HJh"/>
+                <constraint firstItem="YHD-b1-VLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OjS-2E-KF9"/>
+                <constraint firstAttribute="bottom" secondItem="YHD-b1-VLM" secondAttribute="bottom" id="Ope-uF-DBC"/>
+            </constraints>
+            <point key="canvasLocation" x="746" y="119"/>
         </view>
     </objects>
 </document>

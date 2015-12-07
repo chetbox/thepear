@@ -79,6 +79,7 @@
         }
         case 1: {
             LeavingCardViewController *cardController = [[LeavingCardViewController alloc] init];
+            cardController.title = @"Sorry you're leaving";
             [self.navigationController pushViewController: cardController animated: YES];
             break;
         }
