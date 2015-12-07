@@ -57,7 +57,7 @@
             break;
         }
         case 2: {
-            cell.label.text = [NSString stringWithFormat:@"Emoji faces"];
+            cell.label.text = [NSString stringWithFormat:@"Team Emoji"];
             break;
         }
     }

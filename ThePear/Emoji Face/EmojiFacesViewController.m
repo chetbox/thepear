@@ -22,7 +22,7 @@
 @property (nonatomic, strong) NSMutableArray *emojiDecorations;
 @property (nonatomic, strong) UIImagePickerController *picker;
 @property (nonatomic, strong) UIImageView *emojiBeingPlacedView;
-@property (nonatomic, strong) NSArray *emojiImages;
+@property (nonatomic, strong) NSMutableArray *emojiImages;
 @property (nonatomic) NSUInteger emojiImagePointer;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -68,11 +68,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self refreshControlPanel];
+    _emojiImages = [NSMutableArray array];
+    for (int i = 1; i <= 12; i++) {
+        [_emojiImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"em%d.png", i]]];
+    }
     
-    _emojiImages = @[
-                     [UIImage imageNamed:@"testemoji.png"],
-                     [UIImage imageNamed:@"testemoji2.png"]
-                     ];
     _emojiImagePointer = 0;
     _emojiDecorations = [NSMutableArray array];
     
