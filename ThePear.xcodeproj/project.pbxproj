@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */; settings = {ASSET_TAGS = (); }; };
-		06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */; settings = {ASSET_TAGS = (); }; };
-		06D7DCA81C164CA500B83161 /* em1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9C1C164CA500B83161 /* em1.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCA91C164CA500B83161 /* em2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9D1C164CA500B83161 /* em2.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAA1C164CA500B83161 /* em3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9E1C164CA500B83161 /* em3.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAB1C164CA500B83161 /* em4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9F1C164CA500B83161 /* em4.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAC1C164CA500B83161 /* em5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA01C164CA500B83161 /* em5.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAD1C164CA500B83161 /* em6.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA11C164CA500B83161 /* em6.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAE1C164CA500B83161 /* em7.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA21C164CA500B83161 /* em7.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCAF1C164CA500B83161 /* em8.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA31C164CA500B83161 /* em8.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCB01C164CA500B83161 /* em9.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA41C164CA500B83161 /* em9.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCB11C164CA500B83161 /* em10.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA51C164CA500B83161 /* em10.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCB21C164CA500B83161 /* em11.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA61C164CA500B83161 /* em11.png */; settings = {ASSET_TAGS = (); }; };
-		06D7DCB31C164CA500B83161 /* em12.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA71C164CA500B83161 /* em12.png */; settings = {ASSET_TAGS = (); }; };
+		06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */; };
+		06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */; };
+		06D7DCA81C164CA500B83161 /* em1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9C1C164CA500B83161 /* em1.png */; };
+		06D7DCA91C164CA500B83161 /* em2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9D1C164CA500B83161 /* em2.png */; };
+		06D7DCAA1C164CA500B83161 /* em3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9E1C164CA500B83161 /* em3.png */; };
+		06D7DCAB1C164CA500B83161 /* em4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9F1C164CA500B83161 /* em4.png */; };
+		06D7DCAC1C164CA500B83161 /* em5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA01C164CA500B83161 /* em5.png */; };
+		06D7DCAD1C164CA500B83161 /* em6.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA11C164CA500B83161 /* em6.png */; };
+		06D7DCAE1C164CA500B83161 /* em7.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA21C164CA500B83161 /* em7.png */; };
+		06D7DCAF1C164CA500B83161 /* em8.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA31C164CA500B83161 /* em8.png */; };
+		06D7DCB01C164CA500B83161 /* em9.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA41C164CA500B83161 /* em9.png */; };
+		06D7DCB11C164CA500B83161 /* em10.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA51C164CA500B83161 /* em10.png */; };
+		06D7DCB21C164CA500B83161 /* em11.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA61C164CA500B83161 /* em11.png */; };
+		06D7DCB31C164CA500B83161 /* em12.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA71C164CA500B83161 /* em12.png */; };
 		094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */ = {isa = PBXBuildFile; fileRef = 094DD2D41C162EFF0014CF70 /* Marcin.png */; };
 		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
@@ -402,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";

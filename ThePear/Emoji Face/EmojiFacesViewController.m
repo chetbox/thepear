@@ -213,7 +213,7 @@
     if (self.emojiBeingPlacedView) return;
     
     CGPoint pt = [tgr locationInView:self.imageView];
-    CGRect startFrame = CGRectMake(pt.x - 30, pt.y - 30, 60, 60);
+    CGRect startFrame = CGRectMake(pt.x - 60, pt.y - 60, 120, 120);
     //Create UIImageView with gesture recognisers
     self.emojiBeingPlacedView = [[UIImageView alloc] initWithFrame:startFrame];
     self.emojiBeingPlacedView.contentMode = UIViewContentModeScaleAspectFit;
