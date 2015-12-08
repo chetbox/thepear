@@ -13,24 +13,96 @@
                 <viewControllerLayoutGuide type="bottom" id="eAm-Af-7au"/>
             </layoutGuides>
             <view key="view" contentMode="scaleToFill" id="mnw-vJ-Ztk">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote Machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fR-Zh-dK1">
-                        <rect key="frame" x="30" y="115" width="117" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJX-25-szW">
+                        <rect key="frame" x="117" y="327" width="140" height="140"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="aQa-sE-CGK"/>
+                            <constraint firstAttribute="width" constant="140" id="oT2-5N-YGS"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fby-z3-szG">
+                        <rect key="frame" x="31" y="148" width="313" height="124"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="O1k-1l-TRV">
+                                <rect key="frame" x="9" y="9" width="295" height="105"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.4431372549" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="3Nj-gv-ZZo"/>
+                                    <constraint firstAttribute="width" constant="295" id="OoN-Yl-be6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.4431372549" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="124" id="0Kk-Xt-4TZ"/>
+                            <constraint firstItem="O1k-1l-TRV" firstAttribute="centerY" secondItem="fby-z3-szG" secondAttribute="centerY" id="bMM-Ma-S2c"/>
+                            <constraint firstItem="O1k-1l-TRV" firstAttribute="centerX" secondItem="fby-z3-szG" secondAttribute="centerX" id="fmg-wg-25i"/>
+                            <constraint firstAttribute="width" constant="313" id="zUk-Ew-ssm"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZm-Ws-37t" customClass="TriangleView">
+                        <rect key="frame" x="162" y="272" width="77" height="45"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="ACQ-f8-lVC"/>
+                            <constraint firstAttribute="height" constant="45" id="Neh-MN-yKi"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-qT-voc">
+                        <rect key="frame" x="57" y="567" width="260" height="65"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="1Fs-lM-g3e"/>
+                            <constraint firstAttribute="width" constant="260" id="jE9-31-9ET"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                        <state key="normal" title="Generate 🎱">
+                            <color key="titleColor" red="0.25882352939999997" green="0.61176470589999998" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="generateQuote:" destination="4wn-d2-tM4" eventType="touchUpInside" id="ciZ-24-wvO"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <animations/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="tZm-Ws-37t" firstAttribute="top" secondItem="fby-z3-szG" secondAttribute="bottom" id="4HE-jc-fzl"/>
+                    <constraint firstItem="JJX-25-szW" firstAttribute="centerX" secondItem="mnw-vJ-Ztk" secondAttribute="centerX" id="DUj-Gx-9kz"/>
+                    <constraint firstItem="tZm-Ws-37t" firstAttribute="centerX" secondItem="mnw-vJ-Ztk" secondAttribute="centerX" constant="13" id="Etn-x0-bvG"/>
+                    <constraint firstItem="ZlZ-qT-voc" firstAttribute="centerX" secondItem="mnw-vJ-Ztk" secondAttribute="centerX" id="Qrg-RI-qJz"/>
+                    <constraint firstItem="JJX-25-szW" firstAttribute="top" secondItem="fby-z3-szG" secondAttribute="bottom" constant="55" id="baE-ln-02h"/>
+                    <constraint firstItem="eAm-Af-7au" firstAttribute="top" secondItem="ZlZ-qT-voc" secondAttribute="bottom" constant="35" id="kVI-U6-jX0"/>
+                    <constraint firstItem="tZm-Ws-37t" firstAttribute="top" secondItem="O1k-1l-TRV" secondAttribute="bottom" constant="10" id="oK2-Z4-KAk"/>
+                    <constraint firstItem="fby-z3-szG" firstAttribute="centerX" secondItem="mnw-vJ-Ztk" secondAttribute="centerX" id="rdF-Cb-mcR"/>
+                    <constraint firstItem="ZlZ-qT-voc" firstAttribute="top" secondItem="JJX-25-szW" secondAttribute="bottom" constant="100" id="stT-4N-Ojy"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="oK2-Z4-KAk"/>
+                    </mask>
+                </variation>
             </view>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
-                <outlet property="label" destination="9fR-Zh-dK1" id="ZEN-kB-Stf"/>
+                <outlet property="generateButton" destination="ZlZ-qT-voc" id="6OW-DL-ty8"/>
+                <outlet property="personImageView" destination="JJX-25-szW" id="rdb-lm-LoC"/>
+                <outlet property="quoteLabel" destination="O1k-1l-TRV" id="zZh-ye-S53"/>
+                <outlet property="quoteLabelContainer" destination="fby-z3-szG" id="a8n-Ty-npn"/>
             </connections>
-            <point key="canvasLocation" x="487" y="401"/>
+            <point key="canvasLocation" x="486.5" y="400.5"/>
         </viewController>
     </objects>
 </document>
