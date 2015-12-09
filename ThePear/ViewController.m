@@ -11,9 +11,10 @@
 #import "QuoteMachineViewController.h"
 #import "LeavingCardViewController.h"
 #import "EmojiFacesViewController.h"
+#import "ChompViewController.h"
 
 // INCREMENT HERE WHEN ADDING A PAGE
-#define NUMBER_OF_PAGES 3
+#define NUMBER_OF_PAGES 4
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -60,6 +61,10 @@
             cell.label.text = [NSString stringWithFormat:@"Team Emoji"];
             break;
         }
+        case 3: {
+            cell.label.text = [NSString stringWithFormat:@"Regicide"];
+            break;
+        }
     }
     
     return cell;
@@ -86,6 +91,11 @@
         case 2: {
             EmojiFacesViewController *efVc = [[UIStoryboard storyboardWithName:@"EmojiFaces" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
             [self.navigationController pushViewController:efVc animated:YES];
+            break;
+        }
+        case 3: {
+            ChompViewController *newVc = [[ChompViewController alloc] init];
+            [self.navigationController pushViewController:newVc animated:YES];
             break;
         }
             

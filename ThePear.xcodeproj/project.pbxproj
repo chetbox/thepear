@@ -26,6 +26,8 @@
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
 		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
 		09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */; };
+		E23112521C150CA100EDEA97 /* PearKingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23112511C150CA100EDEA97 /* PearKingView.m */; };
+		E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
 		E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A081C03EA710058BAD6 /* AppDelegate.m */; };
 		E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A0B1C03EA710058BAD6 /* ViewController.m */; };
@@ -60,6 +62,10 @@
 		09DCAD6E1C14E26800051079 /* LeavingMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingMessageTableViewCell.h; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.h"; sourceTree = "<group>"; };
 		09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingMessageTableViewCell.m; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.m"; sourceTree = "<group>"; };
 		09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingMessageTableViewCell.xib; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.xib"; sourceTree = "<group>"; };
+		E23112501C150CA100EDEA97 /* PearKingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PearKingView.h; path = Chomp/PearKingView.h; sourceTree = "<group>"; };
+		E23112511C150CA100EDEA97 /* PearKingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PearKingView.m; path = Chomp/PearKingView.m; sourceTree = "<group>"; };
+		E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChompViewController.h; path = Chomp/ChompViewController.h; sourceTree = "<group>"; };
+		E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChompViewController.m; path = Chomp/ChompViewController.m; sourceTree = "<group>"; };
 		E2C65A011C03EA710058BAD6 /* ThePear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C65A051C03EA710058BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2C65A071C03EA710058BAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +144,17 @@
 				09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */,
 			);
 			name = "Table View Cell";
+            sourceTree = "<group>";
+        };
+		E2C1FB561C0B898800E1ACF4 /* Chomp */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */,
+				E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */,
+				E23112501C150CA100EDEA97 /* PearKingView.h */,
+				E23112511C150CA100EDEA97 /* PearKingView.m */,
+			);
+			name = Chomp;
 			sourceTree = "<group>";
 		};
 		E2C659F81C03EA710058BAD6 = {
@@ -161,6 +178,7 @@
 			children = (
 				09DCAD651C14DE4900051079 /* Sorry you're leaving */,
 				06D7DC961C164C5D00B83161 /* Emoji Face */,
+				E2C1FB561C0B898800E1ACF4 /* Chomp */,
 				E2C65A1E1C03F2F80058BAD6 /* QuoteMachine */,
 				E2C65A071C03EA710058BAD6 /* AppDelegate.h */,
 				E2C65A081C03EA710058BAD6 /* AppDelegate.m */,
@@ -282,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23112521C150CA100EDEA97 /* PearKingView.m in Sources */,
+				E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */,
 				E2C65A231C03F3380058BAD6 /* QuoteMachineViewController.m in Sources */,
 				E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */,
 				06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */,
