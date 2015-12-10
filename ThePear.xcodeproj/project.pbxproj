@@ -28,6 +28,7 @@
 		09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */; };
 		3786C6561C16452D0048BC7B /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786C6551C16452D0048BC7B /* TriangleView.m */; };
 		66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FC049E1C1991F600401470 /* TeamEmojis.xcassets */; };
+		66FC04A11C199A6600401470 /* marcin1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 66FC04A01C199A6600401470 /* marcin1.m4a */; };
 		E23112521C150CA100EDEA97 /* PearKingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23112511C150CA100EDEA97 /* PearKingView.m */; };
 		E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
@@ -67,6 +68,7 @@
 		3786C6541C16452D0048BC7B /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TriangleView.h; path = QuoteMachine/TriangleView.h; sourceTree = "<group>"; };
 		3786C6551C16452D0048BC7B /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleView.m; path = QuoteMachine/TriangleView.m; sourceTree = "<group>"; };
 		66FC049E1C1991F600401470 /* TeamEmojis.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = TeamEmojis.xcassets; path = QuoteMachine/TeamEmojis.xcassets; sourceTree = "<group>"; };
+		66FC04A01C199A6600401470 /* marcin1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = marcin1.m4a; sourceTree = "<group>"; };
 		E23112501C150CA100EDEA97 /* PearKingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PearKingView.h; path = Chomp/PearKingView.h; sourceTree = "<group>"; };
 		E23112511C150CA100EDEA97 /* PearKingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PearKingView.m; path = Chomp/PearKingView.m; sourceTree = "<group>"; };
 		E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChompViewController.h; path = Chomp/ChompViewController.h; sourceTree = "<group>"; };
@@ -149,8 +151,16 @@
 				09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */,
 			);
 			name = "Table View Cell";
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
+		66FC04A21C199A7000401470 /* Audio Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				66FC04A01C199A6600401470 /* marcin1.m4a */,
+			);
+			name = "Audio Quotes";
+			sourceTree = "<group>";
+		};
 		E2C1FB561C0B898800E1ACF4 /* Chomp */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 				E2C65A241C03F3540058BAD6 /* QuoteMachineViewController.xib */,
 				3786C6541C16452D0048BC7B /* TriangleView.h */,
 				3786C6551C16452D0048BC7B /* TriangleView.m */,
+				66FC04A21C199A7000401470 /* Audio Quotes */,
 			);
 			name = QuoteMachine;
 			sourceTree = "<group>";
@@ -290,6 +301,7 @@
 				06D7DCAD1C164CA500B83161 /* em6.png in Resources */,
 				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
+				66FC04A11C199A6600401470 /* marcin1.m4a in Resources */,
 				06D7DCAE1C164CA500B83161 /* em7.png in Resources */,
 				06D7DCB21C164CA500B83161 /* em11.png in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,

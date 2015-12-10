@@ -7,6 +7,7 @@
 //
 
 #import "QuoteMachineViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface QuoteMachineViewController ()
 
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *generateButton;
 
 @property NSArray *quotes;
+@property AVAudioPlayer *audioPlayer;
 
 @end
 
@@ -61,9 +63,9 @@
   @{@"person": @"Marcin", @"quote": @"Maybe you should limit how much you speak"},
   @{@"person": @"Tom", @"quote": @"Initial sausage"},
   @{@"person": @"Chet", @"quote": @"My phone is in a mug over there so now everyone can watch live"},
-  @{@"person": @"Honza", @"quote": @"This is the best looking presentation I've ever seen you make"}
+  @{@"person": @"Honza", @"quote": @"This is the best looking presentation I've ever seen you make"},
+  @{@"person": @"Marcin", @"quote": @"Naomi, maybe you should limit how much you speak", @"audio": @"marcin1.m4a"}
   ];
-    
     
     // do a little bit of pretifying
     self.generateButton.layer.cornerRadius = 3.0;
@@ -85,6 +87,24 @@
     NSDictionary *randQuote = [self.quotes objectAtIndex:randomIndex];
     NSString *person = [randQuote objectForKey:@"person"];
     NSString *quote = [randQuote objectForKey:@"quote"];
+    
+    if (self.audioPlayer != nil) {
+        [self.audioPlayer stop];
+    }
+    
+    if ([randQuote objectForKey:@"audio"] != nil) {
+        NSString *audioFileName = [randQuote objectForKey:@"audio"];
+        NSURL *audioURL = [[NSBundle mainBundle]
+         URLForResource: [[audioFileName lastPathComponent] stringByDeletingPathExtension] withExtension:audioFileName.pathExtension];
+        
+        NSError *error;
+        self.audioPlayer = [[AVAudioPlayer alloc]
+                                      initWithContentsOfURL:audioURL error:&error];
+        [self.audioPlayer prepareToPlay];
+        [self.audioPlayer play];
+ 
+    }
+    
     
     [self.quoteLabel setText:quote];
     [self.personImageView setImage:[self imageForPerson:person]];
