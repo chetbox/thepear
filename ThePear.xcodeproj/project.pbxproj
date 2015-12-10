@@ -29,6 +29,7 @@
 		D0E62E7D1C199AF000B426DF /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0E62E7B1C199AF000B426DF /* MyParticle.sks */; };
 		D0E62E7E1C199AF100B426DF /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E62E7C1C199AF000B426DF /* spark.png */; };
 		D0E62E801C199C4600B426DF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E62E7F1C199C4600B426DF /* SpriteKit.framework */; };
+		D0ECD05A1C19A5AD00B9B26F /* Peter.png in Resources */ = {isa = PBXBuildFile; fileRef = D0ECD0591C19A5AD00B9B26F /* Peter.png */; };
 		E23112521C150CA100EDEA97 /* PearKingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23112511C150CA100EDEA97 /* PearKingView.m */; };
 		E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
@@ -68,6 +69,7 @@
 		D0E62E7B1C199AF000B426DF /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyParticle.sks; path = Chomp/MyParticle.sks; sourceTree = "<group>"; };
 		D0E62E7C1C199AF000B426DF /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = Chomp/spark.png; sourceTree = "<group>"; };
 		D0E62E7F1C199C4600B426DF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D0ECD0591C19A5AD00B9B26F /* Peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter.png; sourceTree = "<group>"; };
 		E23112501C150CA100EDEA97 /* PearKingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PearKingView.h; path = Chomp/PearKingView.h; sourceTree = "<group>"; };
 		E23112511C150CA100EDEA97 /* PearKingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PearKingView.m; path = Chomp/PearKingView.m; sourceTree = "<group>"; };
 		E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChompViewController.h; path = Chomp/ChompViewController.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		094DD2D31C162EE20014CF70 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				D0ECD0591C19A5AD00B9B26F /* Peter.png */,
 				094DD2D41C162EFF0014CF70 /* Marcin.png */,
 			);
 			name = Messages;
@@ -293,6 +296,7 @@
 				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				D0E62E7E1C199AF100B426DF /* spark.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
+				D0ECD05A1C19A5AD00B9B26F /* Peter.png in Resources */,
 				06D7DCAE1C164CA500B83161 /* em7.png in Resources */,
 				06D7DCB21C164CA500B83161 /* em11.png in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
