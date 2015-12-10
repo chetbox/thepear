@@ -21,7 +21,8 @@
 - (instancetype) init {
     self = [super initWithNibName: @"LeavingCardViewController" bundle: [NSBundle mainBundle]];
     if (self) {
-        _messageImages = @[@"Marcin", @"Peter"];
+        _messageImages = @[@"Marcin", @"Peter", @"Tom", @"Alex.jpeg", @"James.jpg"];
+        _messageImages = [self shuffleArray:_messageImages];
     }
     return self;
 }
@@ -30,6 +31,20 @@
     [super viewDidLoad];
     UINib *nib = [UINib nibWithNibName: @"LeavingMessageTableViewCell" bundle: [NSBundle mainBundle]];
     [self.tableView registerNib: nib forCellReuseIdentifier: [LeavingMessageTableViewCell identifier]];
+}
+
+- (NSArray *)shuffleArray:(NSArray *)array
+{
+    NSMutableArray *mutArray = [array mutableCopy];
+    NSUInteger count = mutArray.count;
+    
+    for (NSUInteger i = 0; i < count - 1; ++i) {
+        NSInteger remainingCount = count - i;
+        NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t )remainingCount);
+        [mutArray exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
+    }
+    
+    return [mutArray copy];
 }
 
 #pragma mark - UITableViewDataSource

@@ -22,6 +22,9 @@
 		D0E62E801C199C4600B426DF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E62E7F1C199C4600B426DF /* SpriteKit.framework */; };
 		D0ECD05A1C19A5AD00B9B26F /* Peter.png in Resources */ = {isa = PBXBuildFile; fileRef = D0ECD0591C19A5AD00B9B26F /* Peter.png */; };
 		E23112521C150CA100EDEA97 /* PearKingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23112511C150CA100EDEA97 /* PearKingView.m */; };
+		E290F2181C19CAA70093604E /* Tom.png in Resources */ = {isa = PBXBuildFile; fileRef = E290F2171C19CAA70093604E /* Tom.png */; };
+		E290F21A1C19CAF90093604E /* Alex.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E290F2191C19CAF90093604E /* Alex.jpeg */; };
+		E290F21C1C19CC210093604E /* James.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E290F21B1C19CC210093604E /* James.jpg */; };
 		E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
 		E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A081C03EA710058BAD6 /* AppDelegate.m */; };
@@ -55,6 +58,9 @@
 		D0ECD0591C19A5AD00B9B26F /* Peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter.png; sourceTree = "<group>"; };
 		E23112501C150CA100EDEA97 /* PearKingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PearKingView.h; path = Chomp/PearKingView.h; sourceTree = "<group>"; };
 		E23112511C150CA100EDEA97 /* PearKingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PearKingView.m; path = Chomp/PearKingView.m; sourceTree = "<group>"; };
+		E290F2171C19CAA70093604E /* Tom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tom.png; path = LeavingCard/Messages/Tom.png; sourceTree = "<group>"; };
+		E290F2191C19CAF90093604E /* Alex.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Alex.jpeg; path = LeavingCard/Messages/Alex.jpeg; sourceTree = "<group>"; };
+		E290F21B1C19CC210093604E /* James.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = James.jpg; path = LeavingCard/Messages/James.jpg; sourceTree = "<group>"; };
 		E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChompViewController.h; path = Chomp/ChompViewController.h; sourceTree = "<group>"; };
 		E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChompViewController.m; path = Chomp/ChompViewController.m; sourceTree = "<group>"; };
 		E2C65A011C03EA710058BAD6 /* ThePear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,9 @@
 		094DD2D31C162EE20014CF70 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				E290F21B1C19CC210093604E /* James.jpg */,
+				E290F2191C19CAF90093604E /* Alex.jpeg */,
+				E290F2171C19CAA70093604E /* Tom.png */,
 				D0ECD0591C19A5AD00B9B26F /* Peter.png */,
 				094DD2D41C162EFF0014CF70 /* Marcin.png */,
 			);
@@ -266,11 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E290F21C1C19CC210093604E /* James.jpg in Resources */,
 				66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */,
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
 				D0E62E7D1C199AF000B426DF /* MyParticle.sks in Resources */,
+				E290F2181C19CAA70093604E /* Tom.png in Resources */,
 				06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */,
+				E290F21A1C19CAF90093604E /* Alex.jpeg in Resources */,
 				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				D0E62E7E1C199AF100B426DF /* spark.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
