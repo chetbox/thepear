@@ -9,18 +9,6 @@
 /* Begin PBXBuildFile section */
 		06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */; };
 		06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */; };
-		06D7DCA81C164CA500B83161 /* em1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9C1C164CA500B83161 /* em1.png */; };
-		06D7DCA91C164CA500B83161 /* em2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9D1C164CA500B83161 /* em2.png */; };
-		06D7DCAA1C164CA500B83161 /* em3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9E1C164CA500B83161 /* em3.png */; };
-		06D7DCAB1C164CA500B83161 /* em4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9F1C164CA500B83161 /* em4.png */; };
-		06D7DCAC1C164CA500B83161 /* em5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA01C164CA500B83161 /* em5.png */; };
-		06D7DCAD1C164CA500B83161 /* em6.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA11C164CA500B83161 /* em6.png */; };
-		06D7DCAE1C164CA500B83161 /* em7.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA21C164CA500B83161 /* em7.png */; };
-		06D7DCAF1C164CA500B83161 /* em8.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA31C164CA500B83161 /* em8.png */; };
-		06D7DCB01C164CA500B83161 /* em9.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA41C164CA500B83161 /* em9.png */; };
-		06D7DCB11C164CA500B83161 /* em10.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA51C164CA500B83161 /* em10.png */; };
-		06D7DCB21C164CA500B83161 /* em11.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA61C164CA500B83161 /* em11.png */; };
-		06D7DCB31C164CA500B83161 /* em12.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA71C164CA500B83161 /* em12.png */; };
 		094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */ = {isa = PBXBuildFile; fileRef = 094DD2D41C162EFF0014CF70 /* Marcin.png */; };
 		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
@@ -50,18 +38,6 @@
 		06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EmojiFaces.storyboard; path = "Emoji Face/EmojiFaces.storyboard"; sourceTree = "<group>"; };
 		06D7DC981C164C9700B83161 /* EmojiFacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmojiFacesViewController.h; path = "Emoji Face/EmojiFacesViewController.h"; sourceTree = "<group>"; };
 		06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmojiFacesViewController.m; path = "Emoji Face/EmojiFacesViewController.m"; sourceTree = "<group>"; };
-		06D7DC9C1C164CA500B83161 /* em1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em1.png; sourceTree = "<group>"; };
-		06D7DC9D1C164CA500B83161 /* em2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em2.png; sourceTree = "<group>"; };
-		06D7DC9E1C164CA500B83161 /* em3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em3.png; sourceTree = "<group>"; };
-		06D7DC9F1C164CA500B83161 /* em4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em4.png; sourceTree = "<group>"; };
-		06D7DCA01C164CA500B83161 /* em5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em5.png; sourceTree = "<group>"; };
-		06D7DCA11C164CA500B83161 /* em6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em6.png; sourceTree = "<group>"; };
-		06D7DCA21C164CA500B83161 /* em7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em7.png; sourceTree = "<group>"; };
-		06D7DCA31C164CA500B83161 /* em8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em8.png; sourceTree = "<group>"; };
-		06D7DCA41C164CA500B83161 /* em9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em9.png; sourceTree = "<group>"; };
-		06D7DCA51C164CA500B83161 /* em10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em10.png; sourceTree = "<group>"; };
-		06D7DCA61C164CA500B83161 /* em11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em11.png; sourceTree = "<group>"; };
-		06D7DCA71C164CA500B83161 /* em12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em12.png; sourceTree = "<group>"; };
 		094DD2D41C162EFF0014CF70 /* Marcin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Marcin.png; path = LeavingCard/Messages/Marcin.png; sourceTree = "<group>"; };
 		09DCAD661C14DEA800051079 /* LeavingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingCardViewController.h; path = LeavingCard/LeavingCardViewController.h; sourceTree = "<group>"; };
 		09DCAD671C14DEA800051079 /* LeavingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingCardViewController.m; path = LeavingCard/LeavingCardViewController.m; sourceTree = "<group>"; };
@@ -116,18 +92,6 @@
 				06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */,
 				06D7DC981C164C9700B83161 /* EmojiFacesViewController.h */,
 				06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */,
-				06D7DC9C1C164CA500B83161 /* em1.png */,
-				06D7DC9D1C164CA500B83161 /* em2.png */,
-				06D7DC9E1C164CA500B83161 /* em3.png */,
-				06D7DC9F1C164CA500B83161 /* em4.png */,
-				06D7DCA01C164CA500B83161 /* em5.png */,
-				06D7DCA11C164CA500B83161 /* em6.png */,
-				06D7DCA21C164CA500B83161 /* em7.png */,
-				06D7DCA31C164CA500B83161 /* em8.png */,
-				06D7DCA41C164CA500B83161 /* em9.png */,
-				06D7DCA51C164CA500B83161 /* em10.png */,
-				06D7DCA61C164CA500B83161 /* em11.png */,
-				06D7DCA71C164CA500B83161 /* em12.png */,
 			);
 			name = "Emoji Face";
 			sourceTree = "<group>";
@@ -303,29 +267,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */,
-				06D7DCAB1C164CA500B83161 /* em4.png in Resources */,
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
-				06D7DCB11C164CA500B83161 /* em10.png in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
 				D0E62E7D1C199AF000B426DF /* MyParticle.sks in Resources */,
 				06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */,
-				06D7DCAF1C164CA500B83161 /* em8.png in Resources */,
-				06D7DCA81C164CA500B83161 /* em1.png in Resources */,
-				06D7DCA91C164CA500B83161 /* em2.png in Resources */,
-				06D7DCAD1C164CA500B83161 /* em6.png in Resources */,
 				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				D0E62E7E1C199AF100B426DF /* spark.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
 				66FC04A11C199A6600401470 /* marcin1.m4a in Resources */,
 				D0ECD05A1C19A5AD00B9B26F /* Peter.png in Resources */,
-				06D7DCAE1C164CA500B83161 /* em7.png in Resources */,
-				06D7DCB21C164CA500B83161 /* em11.png in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
-				06D7DCB01C164CA500B83161 /* em9.png in Resources */,
-				06D7DCAC1C164CA500B83161 /* em5.png in Resources */,
-				06D7DCB31C164CA500B83161 /* em12.png in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,
-				06D7DCAA1C164CA500B83161 /* em3.png in Resources */,
 				E2C65A0F1C03EA710058BAD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -69,9 +69,12 @@
     // Do any additional setup after loading the view from its nib.
     [self refreshControlPanel];
     _emojiImages = [NSMutableArray array];
-    for (int i = 1; i <= 12; i++) {
-        [_emojiImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"em%d.png", i]]];
+    NSArray *names = @[@"adam",@"alex",@"anna",@"chet",@"honza",@"laurin",@"marcin",@"martin",
+                       @"maxim",@"naomi",@"peter",@"tom"];
+    for (NSString *name in names) {
+        [_emojiImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%@_emoji", name]]];
     }
+    [self shuffle:_emojiImages];
     
     _emojiImagePointer = 0;
     _emojiDecorations = [NSMutableArray array];
@@ -85,6 +88,16 @@
         btn.titleLabel.numberOfLines = 0;
         btn.titleLabel.adjustsFontSizeToFitWidth = YES;
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
+    }
+}
+
+- (void)shuffle:(NSMutableArray *)array
+{
+    NSUInteger count = [array count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        NSInteger nElements = count - i;
+        NSInteger n = (arc4random() % nElements) + i;
+        [array exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
 }
 
@@ -138,7 +151,7 @@
     self.picker = [[UIImagePickerController alloc] init];
     self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     self.picker.delegate = self;
-    self.picker.allowsEditing = YES;
+    self.picker.allowsEditing = NO;
     
     [self presentViewController:self.picker animated:YES completion:nil];
 }
