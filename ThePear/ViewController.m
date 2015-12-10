@@ -27,8 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     self.navigationItem.title = @"The Pear";
+    
+    UIImage *bgImage = [UIImage imageNamed:@"bg"];
+    UIImageView *bgImageView = [[UIImageView alloc] initWithImage:bgImage];
+    bgImageView.frame = CGRectMake(0, 0, 375, 667);
+    [self.view insertSubview:bgImageView atIndex:0];
 }
 
 #pragma mark - UICollectionViewDataSource -
@@ -54,15 +59,15 @@
             break;
         }
         case 1: {
-            cell.label.text = [NSString stringWithFormat:@"Sorry you're leaving"];
+            cell.label.text = [NSString stringWithFormat:@"Sorry You're Leaving"];
             break;
         }
         case 2: {
-            cell.label.text = [NSString stringWithFormat:@"Team Emoji"];
+            cell.label.text = [NSString stringWithFormat:@"Emoji Stamper"];
             break;
         }
         case 3: {
-            cell.label.text = [NSString stringWithFormat:@"Regicide"];
+            cell.label.text = [NSString stringWithFormat:@"Regicide de Poire"];
             break;
         }
     }

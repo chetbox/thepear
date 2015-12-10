@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PearKingViewDelegate <NSObject>
+
+- (void)pearChomped;
+
+@end
+
 @interface PearKingView : UIView
+
+@property (readonly) CGFloat offsetEatenPercentage;
+@property (nonatomic, assign) BOOL chompsAllowed;
+@property (nonatomic, weak) id<PearKingViewDelegate> delegate;
 
 @end
