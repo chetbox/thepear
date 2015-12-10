@@ -28,7 +28,7 @@
     [super viewDidLoad];
 
     self.collectionView.backgroundColor = [UIColor clearColor];
-    self.navigationItem.title = @"The Pear";
+    self.navigationItem.title = @"🍐";
     
     UIImage *bgImage = [UIImage imageNamed:@"bg"];
     UIImageView *bgImageView = [[UIImageView alloc] initWithImage:bgImage];
