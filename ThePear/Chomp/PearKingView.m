@@ -8,6 +8,7 @@
 
 #import "PearKingView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <SpriteKit/SpriteKit.h>
 
 @interface PearKingView ()
 
@@ -17,6 +18,10 @@
 @property (nonatomic, assign) NSUInteger startingEatenPixels;
 @property (nonatomic, assign) NSUInteger currentEatenPixels;
 @property (nonatomic, assign) NSUInteger totalPixels;
+
+@property (nonatomic, strong) SKView *skView;
+@property (nonatomic, strong) SKScene *particleScene;
+@property (nonatomic, strong) SKEmitterNode *emitterNode;
 
 @end
 
@@ -32,6 +37,16 @@
         self.chomps = [NSMutableArray new];
         self.chompsAllowed = YES;
         
+        self.skView = [[SKView alloc] initWithFrame:frame];
+        [self.skView setBackgroundColor:[UIColor clearColor]];
+        
+        self.particleScene = [SKScene sceneWithSize:frame.size];
+        self.particleScene.scaleMode = SKSceneScaleModeAspectFill;
+        [self.particleScene setBackgroundColor:[UIColor clearColor]];
+        [self.skView presentScene:self.particleScene];
+        
+        [self addSubview:self.skView];
+        
         self.userInteractionEnabled = YES;
         UITapGestureRecognizer *pearTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pearTapped:)];
         pearTap.numberOfTapsRequired = 1;
@@ -42,6 +57,14 @@
     }
     
     return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    [self.skView setFrame:CGRectInset(self.bounds, -400, -400)];
+    self.particleScene.size = CGRectInset(self.bounds, -400, -400).size;
 }
 
 - (void)calculateInitialPercentages {
@@ -86,6 +109,22 @@
     
     // After - count eaten pixels
     NSUInteger after = [self currentEatenPixels];
+    
+    if (after > before) {
+        
+        [self.emitterNode removeFromParent];
+        
+        NSString *burstPath = [[NSBundle mainBundle] pathForResource:@"MyParticle" ofType:@"sks"];
+        
+        self.emitterNode = [NSKeyedUnarchiver unarchiveObjectWithFile:burstPath];
+        
+        CGPoint point = CGPointMake(CGRectGetMidX(chompRect) + 400, CGRectGetMidY(chompRect) + 400);
+        
+        self.emitterNode.position = [self.particleScene convertPointToView:point];
+        [self.particleScene addChild:self.emitterNode];
+
+        NSLog(@"CHOMP!");
+    }
     
     self.currentEatenPixels += (after - before);
 }

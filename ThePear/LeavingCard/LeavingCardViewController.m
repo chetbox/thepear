@@ -21,7 +21,7 @@
 - (instancetype) init {
     self = [super initWithNibName: @"LeavingCardViewController" bundle: [NSBundle mainBundle]];
     if (self) {
-        _messageImages = @[@"Marcin"];
+        _messageImages = @[@"Marcin", @"Peter"];
     }
     return self;
 }
