@@ -132,7 +132,7 @@
     
     if (self.chompsAllowed) {
         CGPoint chompLocation = [recog locationInView:self];
-        CGFloat chompDiam = arc4random_uniform(15) + 80;
+        CGFloat chompDiam = arc4random_uniform(15) + 30;
         
         CGRect chompRect = CGRectMake(chompLocation.x - (chompDiam / 2), chompLocation.y - (chompDiam / 2), chompDiam, chompDiam);
         [self.chomps addObject:[NSValue valueWithCGRect:chompRect]];
