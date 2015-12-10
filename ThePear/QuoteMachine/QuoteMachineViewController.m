@@ -18,6 +18,7 @@
 
 @property NSArray *quotes;
 @property AVAudioPlayer *audioPlayer;
+@property AVSpeechSynthesizer *speechSynthesizer;
 
 @end
 
@@ -74,6 +75,8 @@
     // populate with random quote to start off..
     [self pickNewQuote];
     
+    self.speechSynthesizer = [[AVSpeechSynthesizer alloc]init];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,6 +95,8 @@
         [self.audioPlayer stop];
     }
     
+    [self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+    
     if ([randQuote objectForKey:@"audio"] != nil) {
         NSString *audioFileName = [randQuote objectForKey:@"audio"];
         NSURL *audioURL = [[NSBundle mainBundle]
@@ -103,6 +108,22 @@
         [self.audioPlayer prepareToPlay];
         [self.audioPlayer play];
  
+    } else {
+        AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:quote];
+        if ([person isEqualToString:@"Anna"]|| [person isEqualToString:@"Naomi"] || [person isEqualToString:@"Maxim"])
+        {
+            utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"]; //US female voice
+        }
+        else
+        {
+            utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"]; //UK male voice
+        }
+        
+        NSInteger rand = arc4random_uniform(15);
+        CGFloat speed = 0.40 + (0.01 * rand); // speed between 0.40 & 0.55
+        
+        [utterance setRate:speed];
+        [self.speechSynthesizer speakUtterance:utterance];
     }
     
     
