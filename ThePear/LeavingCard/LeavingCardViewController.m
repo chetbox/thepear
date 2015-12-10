@@ -21,7 +21,7 @@
 - (instancetype) init {
     self = [super initWithNibName: @"LeavingCardViewController" bundle: [NSBundle mainBundle]];
     if (self) {
-        _messageImages = @[@"Marcin", @"Peter", @"Tom", @"Alex.jpeg", @"James.jpg"];
+        _messageImages = @[@"Marcin", @"Peter", @"Tom", @"Alex.jpeg", @"James.jpg", @"Anna.jpg", @"Adam"];
         _messageImages = [self shuffleArray:_messageImages];
     }
     return self;

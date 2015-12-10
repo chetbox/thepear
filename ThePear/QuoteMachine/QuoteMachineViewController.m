@@ -38,7 +38,7 @@
   @{@"person": @"Tom", @"quote": @"'That' to 'they'...that’s my favourite ongoing ticket"},
   @{@"person": @"Tom", @"quote": @"I’ll put you in the fridge"},
   @{@"person": @"Tom", @"quote": @"That’s like the bell end example"},
-  @{@"person": @"Peter", @"quote": @"Yo yo whassup this yo boy PH comin in live from Compton (Peter's first push notification)"},
+  @{@"person": @"Peter", @"quote": @"Yo yo whassup this yo boy PH comin in live from Compton (Peter's first push notification)", @"quote-speak": @"Yo yo whassup this yo boy PH comin in lyve from Compton (Peter's first push notification)"},
   @{@"person": @"Tom", @"quote": @"We don’t have any data for cheese"},
   @{@"person": @"Tom", @"quote": @"What are you trying to remember?"},
   @{@"person": @"Peter", @"quote": @"Do you ever get that feeling that you’re watching someone talking and they’re suddenly really small on the screen and then you feel like an insect. Makes me feel weird sometimes, I have to leave the room or turn a light on"},
@@ -63,7 +63,7 @@
   @{@"person": @"Peter", @"quote": @"It’s inconsistent as shit yeah (emoji in Gmail)"},
   @{@"person": @"Marcin", @"quote": @"Maybe you should limit how much you speak"},
   @{@"person": @"Tom", @"quote": @"Initial sausage"},
-  @{@"person": @"Chet", @"quote": @"My phone is in a mug over there so now everyone can watch live"},
+  @{@"person": @"Chet", @"quote": @"My phone is in a mug over there so now everyone can watch live", @"quote-speak": @"My phone is in a mug over there so now everyone can watch lyve"},
   @{@"person": @"Honza", @"quote": @"This is the best looking presentation I've ever seen you make"},
   @{@"person": @"Marcin", @"quote": @"Naomi, maybe you should limit how much you speak", @"audio": @"marcin1.m4a"}
   ];
@@ -90,6 +90,11 @@
     NSDictionary *randQuote = [self.quotes objectAtIndex:randomIndex];
     NSString *person = [randQuote objectForKey:@"person"];
     NSString *quote = [randQuote objectForKey:@"quote"];
+    NSString *quoteSpeak = [randQuote objectForKey:@"quote-speak"];
+    
+    if (!quoteSpeak) {
+        quoteSpeak = quote;
+    }
     
     if (self.audioPlayer != nil) {
         [self.audioPlayer stop];
@@ -109,7 +114,8 @@
         [self.audioPlayer play];
  
     } else {
-        AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:quote];
+        
+        AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:quoteSpeak];
         if ([person isEqualToString:@"Anna"]|| [person isEqualToString:@"Naomi"] || [person isEqualToString:@"Maxim"])
         {
             utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"]; //US female voice

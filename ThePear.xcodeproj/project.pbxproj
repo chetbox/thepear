@@ -35,6 +35,8 @@
 		E2C65A1D1C03EFC70058BAD6 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A1C1C03EFC70058BAD6 /* MenuCollectionViewCell.m */; };
 		E2C65A231C03F3380058BAD6 /* QuoteMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A221C03F3380058BAD6 /* QuoteMachineViewController.m */; };
 		E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C65A241C03F3540058BAD6 /* QuoteMachineViewController.xib */; };
+		E2D656361C19D2C20047F6C0 /* Anna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2D656351C19D2C20047F6C0 /* Anna.jpg */; };
+		E2D656381C19D4340047F6C0 /* Adam.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D656371C19D4340047F6C0 /* Adam.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		E2C65A211C03F3380058BAD6 /* QuoteMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuoteMachineViewController.h; path = QuoteMachine/QuoteMachineViewController.h; sourceTree = "<group>"; };
 		E2C65A221C03F3380058BAD6 /* QuoteMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuoteMachineViewController.m; path = QuoteMachine/QuoteMachineViewController.m; sourceTree = "<group>"; };
 		E2C65A241C03F3540058BAD6 /* QuoteMachineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteMachineViewController.xib; sourceTree = "<group>"; };
+		E2D656351C19D2C20047F6C0 /* Anna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Anna.jpg; path = LeavingCard/Messages/Anna.jpg; sourceTree = "<group>"; };
+		E2D656371C19D4340047F6C0 /* Adam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Adam.png; path = LeavingCard/Messages/Adam.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		094DD2D31C162EE20014CF70 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				E2D656371C19D4340047F6C0 /* Adam.png */,
+				E2D656351C19D2C20047F6C0 /* Anna.jpg */,
 				E290F21B1C19CC210093604E /* James.jpg */,
 				E290F2191C19CAF90093604E /* Alex.jpeg */,
 				E290F2171C19CAA70093604E /* Tom.png */,
@@ -275,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D656381C19D4340047F6C0 /* Adam.png in Resources */,
 				E290F21C1C19CC210093604E /* James.jpg in Resources */,
 				66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */,
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
@@ -290,6 +297,7 @@
 				D0ECD05A1C19A5AD00B9B26F /* Peter.png in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,
+				E2D656361C19D2C20047F6C0 /* Anna.jpg in Resources */,
 				E2C65A0F1C03EA710058BAD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
