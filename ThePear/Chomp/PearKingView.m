@@ -32,10 +32,7 @@
     if (self = [super initWithFrame:frame]) {
         
         [self setBackgroundColor:[UIColor clearColor]];
-        self.pearImage = [UIImage imageNamed:@"pear-king"];
-        self.pearMaskImage = [UIImage imageNamed:@"pear-king-mask"];
-        self.chomps = [NSMutableArray new];
-        self.chompsAllowed = YES;
+        
         
         self.skView = [[SKView alloc] initWithFrame:frame];
         [self.skView setBackgroundColor:[UIColor clearColor]];
@@ -53,7 +50,7 @@
         
         [self addGestureRecognizer:pearTap];
         
-        [self calculateInitialPercentages];
+        [self reset];
     }
     
     return self;
@@ -65,6 +62,16 @@
     
     [self.skView setFrame:CGRectInset(self.bounds, -400, -400)];
     self.particleScene.size = CGRectInset(self.bounds, -400, -400).size;
+}
+
+- (void)reset {
+    self.pearImage = [UIImage imageNamed:@"pear-king"];
+    self.pearMaskImage = [UIImage imageNamed:@"pear-king-mask"];
+    self.chomps = [NSMutableArray new];
+    self.chompsAllowed = YES;
+    
+    [self calculateInitialPercentages];
+    [self setNeedsDisplay];
 }
 
 - (void)calculateInitialPercentages {
@@ -110,6 +117,8 @@
     // After - count eaten pixels
     NSUInteger after = [self currentEatenPixels];
     
+    self.currentEatenPixels += (after - before);
+    
     if (after > before) {
         
         [self.emitterNode removeFromParent];
@@ -125,8 +134,6 @@
 
         NSLog(@"CHOMP!");
     }
-    
-    self.currentEatenPixels += (after - before);
 }
 
 - (NSUInteger)currentEatenPixels
@@ -149,13 +156,10 @@
             UInt8 red = data[pixelInfo];
             UInt8 alpha = data[pixelInfo+3];
             
-            // White pixel
-            if (alpha > 0) {
-                totalPixels++;
-                
-                if (red > 0) {
-                    whitePixels++;
-                }
+            totalPixels++;
+            // White or transparent pixel
+            if (red > 0 || alpha < 100) {
+                whitePixels++;
             }
         }
     }

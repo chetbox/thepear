@@ -20,4 +20,6 @@
 @property (nonatomic, assign) BOOL chompsAllowed;
 @property (nonatomic, weak) id<PearKingViewDelegate> delegate;
 
+- (void)reset;
+
 @end
