@@ -12,6 +12,7 @@
 		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
 		09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */; };
 		3786C6561C16452D0048BC7B /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786C6551C16452D0048BC7B /* TriangleView.m */; };
+		66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FC049E1C1991F600401470 /* TeamEmojis.xcassets */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
 		E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A081C03EA710058BAD6 /* AppDelegate.m */; };
 		E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A0B1C03EA710058BAD6 /* ViewController.m */; };
@@ -32,6 +33,7 @@
 		09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingMessageTableViewCell.xib; path = "LeavingCard/Table View Cell/LeavingMessageTableViewCell.xib"; sourceTree = "<group>"; };
 		3786C6541C16452D0048BC7B /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TriangleView.h; path = QuoteMachine/TriangleView.h; sourceTree = "<group>"; };
 		3786C6551C16452D0048BC7B /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleView.m; path = QuoteMachine/TriangleView.m; sourceTree = "<group>"; };
+		66FC049E1C1991F600401470 /* TeamEmojis.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = TeamEmojis.xcassets; path = QuoteMachine/TeamEmojis.xcassets; sourceTree = "<group>"; };
 		E2C65A011C03EA710058BAD6 /* ThePear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C65A051C03EA710058BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2C65A071C03EA710058BAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				E2C65A1C1C03EFC70058BAD6 /* MenuCollectionViewCell.m */,
 				E2C65A0D1C03EA710058BAD6 /* Main.storyboard */,
 				E2C65A101C03EA710058BAD6 /* Assets.xcassets */,
+				66FC049E1C1991F600401470 /* TeamEmojis.xcassets */,
 				E2C65A121C03EA710058BAD6 /* LaunchScreen.storyboard */,
 				E2C65A151C03EA710058BAD6 /* Info.plist */,
 				E2C65A041C03EA710058BAD6 /* Supporting Files */,
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */,
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
