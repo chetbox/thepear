@@ -18,29 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LPk-6T-Vbm">
-                                <rect key="frame" x="10" y="10" width="580" height="600"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LPk-6T-Vbm">
+                                <rect key="frame" x="10" y="72" width="580" height="536"/>
                                 <animations/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5lL-6j-MsX">
-                                    <size key="itemSize" width="100" height="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="15" id="5lL-6j-MsX">
+                                    <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5F4-jl-EBV" customClass="MenuCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                        <rect key="frame" x="15" y="79" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-ZP-MYL">
-                                                    <rect key="frame" x="4" y="38" width="92" height="24"/>
+                                                    <rect key="frame" x="16" y="59" width="118" height="31.5"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" red="0.16078431372549018" green="0.16470588235294117" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -51,10 +51,10 @@
                                         <constraints>
                                             <constraint firstItem="1Og-ZP-MYL" firstAttribute="centerY" secondItem="5F4-jl-EBV" secondAttribute="centerY" id="TTr-Hb-tWm"/>
                                             <constraint firstItem="1Og-ZP-MYL" firstAttribute="top" secondItem="5F4-jl-EBV" secondAttribute="topMargin" constant="56" id="Vdx-pN-9be"/>
-                                            <constraint firstItem="1Og-ZP-MYL" firstAttribute="leading" secondItem="5F4-jl-EBV" secondAttribute="leadingMargin" constant="-4" id="enR-v8-QcD"/>
+                                            <constraint firstItem="1Og-ZP-MYL" firstAttribute="leading" secondItem="5F4-jl-EBV" secondAttribute="leadingMargin" constant="8" id="enR-v8-QcD"/>
                                             <constraint firstItem="1Og-ZP-MYL" firstAttribute="centerY" secondItem="5F4-jl-EBV" secondAttribute="centerY" id="hNe-aK-um4"/>
                                             <constraint firstItem="1Og-ZP-MYL" firstAttribute="top" secondItem="5F4-jl-EBV" secondAttribute="topMargin" constant="31" id="lwW-Mj-GdA"/>
-                                            <constraint firstItem="1Og-ZP-MYL" firstAttribute="trailing" secondItem="5F4-jl-EBV" secondAttribute="trailingMargin" constant="4" id="zHV-x3-cje"/>
+                                            <constraint firstItem="1Og-ZP-MYL" firstAttribute="trailing" secondItem="5F4-jl-EBV" secondAttribute="trailingMargin" constant="-8" id="zHV-x3-cje"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -79,7 +79,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LPk-6T-Vbm" secondAttribute="trailing" constant="10" id="0mV-3V-0EB"/>
                             <constraint firstItem="LPk-6T-Vbm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="1C6-7f-xIc"/>
-                            <constraint firstItem="LPk-6T-Vbm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="aFF-5Q-H6L"/>
+                            <constraint firstItem="LPk-6T-Vbm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="PBJ-jR-QHr"/>
                             <constraint firstItem="LPk-6T-Vbm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="10" id="lGj-gb-96R"/>
                         </constraints>
                     </view>

@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */; };
+		06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */; };
+		06D7DCA81C164CA500B83161 /* em1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9C1C164CA500B83161 /* em1.png */; };
+		06D7DCA91C164CA500B83161 /* em2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9D1C164CA500B83161 /* em2.png */; };
+		06D7DCAA1C164CA500B83161 /* em3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9E1C164CA500B83161 /* em3.png */; };
+		06D7DCAB1C164CA500B83161 /* em4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DC9F1C164CA500B83161 /* em4.png */; };
+		06D7DCAC1C164CA500B83161 /* em5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA01C164CA500B83161 /* em5.png */; };
+		06D7DCAD1C164CA500B83161 /* em6.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA11C164CA500B83161 /* em6.png */; };
+		06D7DCAE1C164CA500B83161 /* em7.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA21C164CA500B83161 /* em7.png */; };
+		06D7DCAF1C164CA500B83161 /* em8.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA31C164CA500B83161 /* em8.png */; };
+		06D7DCB01C164CA500B83161 /* em9.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA41C164CA500B83161 /* em9.png */; };
+		06D7DCB11C164CA500B83161 /* em10.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA51C164CA500B83161 /* em10.png */; };
+		06D7DCB21C164CA500B83161 /* em11.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA61C164CA500B83161 /* em11.png */; };
+		06D7DCB31C164CA500B83161 /* em12.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D7DCA71C164CA500B83161 /* em12.png */; };
+		094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */ = {isa = PBXBuildFile; fileRef = 094DD2D41C162EFF0014CF70 /* Marcin.png */; };
 		09DCAD681C14DEA800051079 /* LeavingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD671C14DEA800051079 /* LeavingCardViewController.m */; };
 		09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */; };
 		09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DCAD6F1C14E26800051079 /* LeavingMessageTableViewCell.m */; };
 		09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */; };
 		3786C6561C16452D0048BC7B /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786C6551C16452D0048BC7B /* TriangleView.m */; };
 		66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FC049E1C1991F600401470 /* TeamEmojis.xcassets */; };
+		E23112521C150CA100EDEA97 /* PearKingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E23112511C150CA100EDEA97 /* PearKingView.m */; };
+		E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */; };
 		E2C65A061C03EA710058BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A051C03EA710058BAD6 /* main.m */; };
 		E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A081C03EA710058BAD6 /* AppDelegate.m */; };
 		E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C65A0B1C03EA710058BAD6 /* ViewController.m */; };
@@ -25,6 +42,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EmojiFaces.storyboard; path = "Emoji Face/EmojiFaces.storyboard"; sourceTree = "<group>"; };
+		06D7DC981C164C9700B83161 /* EmojiFacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmojiFacesViewController.h; path = "Emoji Face/EmojiFacesViewController.h"; sourceTree = "<group>"; };
+		06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmojiFacesViewController.m; path = "Emoji Face/EmojiFacesViewController.m"; sourceTree = "<group>"; };
+		06D7DC9C1C164CA500B83161 /* em1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em1.png; sourceTree = "<group>"; };
+		06D7DC9D1C164CA500B83161 /* em2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em2.png; sourceTree = "<group>"; };
+		06D7DC9E1C164CA500B83161 /* em3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em3.png; sourceTree = "<group>"; };
+		06D7DC9F1C164CA500B83161 /* em4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em4.png; sourceTree = "<group>"; };
+		06D7DCA01C164CA500B83161 /* em5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em5.png; sourceTree = "<group>"; };
+		06D7DCA11C164CA500B83161 /* em6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em6.png; sourceTree = "<group>"; };
+		06D7DCA21C164CA500B83161 /* em7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em7.png; sourceTree = "<group>"; };
+		06D7DCA31C164CA500B83161 /* em8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em8.png; sourceTree = "<group>"; };
+		06D7DCA41C164CA500B83161 /* em9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em9.png; sourceTree = "<group>"; };
+		06D7DCA51C164CA500B83161 /* em10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em10.png; sourceTree = "<group>"; };
+		06D7DCA61C164CA500B83161 /* em11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em11.png; sourceTree = "<group>"; };
+		06D7DCA71C164CA500B83161 /* em12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = em12.png; sourceTree = "<group>"; };
+		094DD2D41C162EFF0014CF70 /* Marcin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Marcin.png; path = LeavingCard/Messages/Marcin.png; sourceTree = "<group>"; };
 		09DCAD661C14DEA800051079 /* LeavingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeavingCardViewController.h; path = LeavingCard/LeavingCardViewController.h; sourceTree = "<group>"; };
 		09DCAD671C14DEA800051079 /* LeavingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeavingCardViewController.m; path = LeavingCard/LeavingCardViewController.m; sourceTree = "<group>"; };
 		09DCAD691C14DFCE00051079 /* LeavingCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeavingCardViewController.xib; path = LeavingCard/LeavingCardViewController.xib; sourceTree = "<group>"; };
@@ -34,6 +67,10 @@
 		3786C6541C16452D0048BC7B /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TriangleView.h; path = QuoteMachine/TriangleView.h; sourceTree = "<group>"; };
 		3786C6551C16452D0048BC7B /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleView.m; path = QuoteMachine/TriangleView.m; sourceTree = "<group>"; };
 		66FC049E1C1991F600401470 /* TeamEmojis.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = TeamEmojis.xcassets; path = QuoteMachine/TeamEmojis.xcassets; sourceTree = "<group>"; };
+		E23112501C150CA100EDEA97 /* PearKingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PearKingView.h; path = Chomp/PearKingView.h; sourceTree = "<group>"; };
+		E23112511C150CA100EDEA97 /* PearKingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PearKingView.m; path = Chomp/PearKingView.m; sourceTree = "<group>"; };
+		E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChompViewController.h; path = Chomp/ChompViewController.h; sourceTree = "<group>"; };
+		E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChompViewController.m; path = Chomp/ChompViewController.m; sourceTree = "<group>"; };
 		E2C65A011C03EA710058BAD6 /* ThePear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C65A051C03EA710058BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2C65A071C03EA710058BAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,9 +99,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06D7DC961C164C5D00B83161 /* Emoji Face */ = {
+			isa = PBXGroup;
+			children = (
+				06D7DC971C164C9700B83161 /* EmojiFaces.storyboard */,
+				06D7DC981C164C9700B83161 /* EmojiFacesViewController.h */,
+				06D7DC991C164C9700B83161 /* EmojiFacesViewController.m */,
+				06D7DC9C1C164CA500B83161 /* em1.png */,
+				06D7DC9D1C164CA500B83161 /* em2.png */,
+				06D7DC9E1C164CA500B83161 /* em3.png */,
+				06D7DC9F1C164CA500B83161 /* em4.png */,
+				06D7DCA01C164CA500B83161 /* em5.png */,
+				06D7DCA11C164CA500B83161 /* em6.png */,
+				06D7DCA21C164CA500B83161 /* em7.png */,
+				06D7DCA31C164CA500B83161 /* em8.png */,
+				06D7DCA41C164CA500B83161 /* em9.png */,
+				06D7DCA51C164CA500B83161 /* em10.png */,
+				06D7DCA61C164CA500B83161 /* em11.png */,
+				06D7DCA71C164CA500B83161 /* em12.png */,
+			);
+			name = "Emoji Face";
+			sourceTree = "<group>";
+		};
+		094DD2D31C162EE20014CF70 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				094DD2D41C162EFF0014CF70 /* Marcin.png */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
 		09DCAD651C14DE4900051079 /* Sorry you're leaving */ = {
 			isa = PBXGroup;
 			children = (
+				094DD2D31C162EE20014CF70 /* Messages */,
 				09DCAD6D1C14E22300051079 /* Table View Cell */,
 				09DCAD661C14DEA800051079 /* LeavingCardViewController.h */,
 				09DCAD671C14DEA800051079 /* LeavingCardViewController.m */,
@@ -81,6 +149,17 @@
 				09DCAD701C14E26800051079 /* LeavingMessageTableViewCell.xib */,
 			);
 			name = "Table View Cell";
+            sourceTree = "<group>";
+        };
+		E2C1FB561C0B898800E1ACF4 /* Chomp */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1FB571C0B8A0C00E1ACF4 /* ChompViewController.h */,
+				E2C1FB581C0B8A0C00E1ACF4 /* ChompViewController.m */,
+				E23112501C150CA100EDEA97 /* PearKingView.h */,
+				E23112511C150CA100EDEA97 /* PearKingView.m */,
+			);
+			name = Chomp;
 			sourceTree = "<group>";
 		};
 		E2C659F81C03EA710058BAD6 = {
@@ -103,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				09DCAD651C14DE4900051079 /* Sorry you're leaving */,
+				06D7DC961C164C5D00B83161 /* Emoji Face */,
+				E2C1FB561C0B898800E1ACF4 /* Chomp */,
 				E2C65A1E1C03F2F80058BAD6 /* QuoteMachine */,
 				E2C65A071C03EA710058BAD6 /* AppDelegate.h */,
 				E2C65A081C03EA710058BAD6 /* AppDelegate.m */,
@@ -198,11 +279,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FC049F1C1991F600401470 /* TeamEmojis.xcassets in Resources */,
+				06D7DCAB1C164CA500B83161 /* em4.png in Resources */,
 				09DCAD721C14E26800051079 /* LeavingMessageTableViewCell.xib in Resources */,
+				06D7DCB11C164CA500B83161 /* em10.png in Resources */,
 				09DCAD6A1C14DFCE00051079 /* LeavingCardViewController.xib in Resources */,
+				06D7DC9A1C164C9700B83161 /* EmojiFaces.storyboard in Resources */,
+				06D7DCAF1C164CA500B83161 /* em8.png in Resources */,
+				06D7DCA81C164CA500B83161 /* em1.png in Resources */,
+				06D7DCA91C164CA500B83161 /* em2.png in Resources */,
+				06D7DCAD1C164CA500B83161 /* em6.png in Resources */,
+				094DD2D51C162EFF0014CF70 /* Marcin.png in Resources */,
 				E2C65A141C03EA710058BAD6 /* LaunchScreen.storyboard in Resources */,
+				06D7DCAE1C164CA500B83161 /* em7.png in Resources */,
+				06D7DCB21C164CA500B83161 /* em11.png in Resources */,
 				E2C65A251C03F3540058BAD6 /* QuoteMachineViewController.xib in Resources */,
+				06D7DCB01C164CA500B83161 /* em9.png in Resources */,
+				06D7DCAC1C164CA500B83161 /* em5.png in Resources */,
+				06D7DCB31C164CA500B83161 /* em12.png in Resources */,
 				E2C65A111C03EA710058BAD6 /* Assets.xcassets in Resources */,
+				06D7DCAA1C164CA500B83161 /* em3.png in Resources */,
 				E2C65A0F1C03EA710058BAD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23112521C150CA100EDEA97 /* PearKingView.m in Sources */,
+				E2C1FB591C0B8A0C00E1ACF4 /* ChompViewController.m in Sources */,
 				E2C65A231C03F3380058BAD6 /* QuoteMachineViewController.m in Sources */,
 				E2C65A0C1C03EA710058BAD6 /* ViewController.m in Sources */,
 				3786C6561C16452D0048BC7B /* TriangleView.m in Sources */,
+				06D7DC9B1C164C9700B83161 /* EmojiFacesViewController.m in Sources */,
 				E2C65A091C03EA710058BAD6 /* AppDelegate.m in Sources */,
 				E2C65A061C03EA710058BAD6 /* main.m in Sources */,
 				09DCAD711C14E26800051079 /* LeavingMessageTableViewCell.m in Sources */,
@@ -334,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThePear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftkey.iosteam.ThePear;
 				PRODUCT_NAME = "$(TARGET_NAME)";

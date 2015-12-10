@@ -10,9 +10,11 @@
 #import "MenuCollectionViewCell.h"
 #import "QuoteMachineViewController.h"
 #import "LeavingCardViewController.h"
+#import "EmojiFacesViewController.h"
+#import "ChompViewController.h"
 
 // INCREMENT HERE WHEN ADDING A PAGE
-#define NUMBER_OF_PAGES 2
+#define NUMBER_OF_PAGES 4
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -25,8 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"The Pear";
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    self.navigationItem.title = @"🍐";
+    
+    UIImage *bgImage = [UIImage imageNamed:@"bg"];
+    UIImageView *bgImageView = [[UIImageView alloc] initWithImage:bgImage];
+    bgImageView.frame = CGRectMake(0, 0, 375, 667);
+    [self.view insertSubview:bgImageView atIndex:0];
 }
 
 #pragma mark - UICollectionViewDataSource -
@@ -52,7 +59,15 @@
             break;
         }
         case 1: {
-            cell.label.text = [NSString stringWithFormat:@"Sorry you're leaving"];
+            cell.label.text = [NSString stringWithFormat:@"Sorry You're Leaving"];
+            break;
+        }
+        case 2: {
+            cell.label.text = [NSString stringWithFormat:@"Emoji Stamper"];
+            break;
+        }
+        case 3: {
+            cell.label.text = [NSString stringWithFormat:@"Regicide de Poire"];
             break;
         }
     }
@@ -74,7 +89,18 @@
         }
         case 1: {
             LeavingCardViewController *cardController = [[LeavingCardViewController alloc] init];
+            cardController.title = @"Sorry you're leaving";
             [self.navigationController pushViewController: cardController animated: YES];
+            break;
+        }
+        case 2: {
+            EmojiFacesViewController *efVc = [[UIStoryboard storyboardWithName:@"EmojiFaces" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+            [self.navigationController pushViewController:efVc animated:YES];
+            break;
+        }
+        case 3: {
+            ChompViewController *newVc = [[ChompViewController alloc] init];
+            [self.navigationController pushViewController:newVc animated:YES];
             break;
         }
             

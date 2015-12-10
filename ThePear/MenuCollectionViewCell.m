@@ -13,7 +13,10 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
-        self.backgroundColor = [UIColor colorWithRed:(230.0f/255.0f) green:(230.0f/255.0f) blue:(230.0f/255.0f) alpha:1.0f];
+        self.backgroundColor = [UIColor colorWithRed:(101.0f/255.0f)
+                                               green:(195.0f/255.0f)
+                                                blue:(211.0f/255.0f)
+                                               alpha:0.9f];
     }
     
     return self;
