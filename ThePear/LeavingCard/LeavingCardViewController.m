@@ -52,7 +52,12 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     UIImage *image = [UIImage imageNamed: self.messageImages[indexPath.row]];
-    return [image size].height/[UIScreen mainScreen].nativeScale;
+    return [self _heightForImage: image];
+}
+
+- (CGFloat) _heightForImage: (UIImage*) image {
+    CGFloat imageRatio = image.size.height/image.size.width;
+    return imageRatio * [UIScreen mainScreen].bounds.size.width;
 }
 
 @end
