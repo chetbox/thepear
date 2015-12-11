@@ -127,6 +127,7 @@ typedef NS_ENUM(NSUInteger, GameState) {
 }
 
 - (void)restartTheGame {
+    self.gameStartTime = [NSDate date];
     self.restartGame.hidden = YES;
     self.score.hidden = NO;
     self.mbLeft.hidden = YES;

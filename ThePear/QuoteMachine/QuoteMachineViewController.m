@@ -61,7 +61,6 @@
   @{@"person": @"Peter", @"quote": @"I always put the cylinder on you"},
   @{@"person": @"Honza", @"quote": @"Medication, medication, medication, MEDITATION course (team building)"},
   @{@"person": @"Peter", @"quote": @"It’s inconsistent as shit yeah (emoji in Gmail)"},
-  @{@"person": @"Marcin", @"quote": @"Maybe you should limit how much you speak"},
   @{@"person": @"Tom", @"quote": @"Initial sausage"},
   @{@"person": @"Chet", @"quote": @"My phone is in a mug over there so now everyone can watch live", @"quote-speak": @"My phone is in a mug over there so now everyone can watch lyve"},
   @{@"person": @"Honza", @"quote": @"This is the best looking presentation I've ever seen you make"},
