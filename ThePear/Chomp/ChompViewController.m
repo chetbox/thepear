@@ -101,7 +101,7 @@ typedef NS_ENUM(NSUInteger, GameState) {
     UIImage *success = [UIImage imageNamed:@"success"];
     self.successView = [[UIImageView alloc] initWithImage:success];
     CGSize successSize = success.size;
-    self.successView.frame = CGRectMake((375.0f / 2) - (successSize.width / 2), 420.0f, successSize.width, successSize.height);
+    self.successView.frame = CGRectMake((375.0f / 2) - (successSize.width / 2), 268.0f, successSize.width, successSize.height);
     self.successView.hidden = YES;
 
     UIImage *failure = [UIImage imageNamed:@"regicide"];
